@@ -7,7 +7,7 @@
 }
 
 .sunActivate {
-	animation: 15s linear sunActivate;
+	animation: 9s linear sunActivate;
 }
 
 @keyframes sunActivate {
