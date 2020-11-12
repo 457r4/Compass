@@ -1,0 +1,20 @@
+/* Circle Orbit Style */
+
+#orbit {
+	border: 2px solid var(--king-blue);
+	border-radius: 50%;
+	border-style: dashed;
+}
+
+.orbitActivate {
+	animation: 10s ease-in-out orbitActivate;
+}
+
+@keyframes orbitActivate {
+	from {
+		transform: translate(-50%, -50%) rotate(0deg);
+	}
+	to {
+		transform: translate(-50%, -50%) rotate(72deg);
+	}
+}

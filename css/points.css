@@ -1,0 +1,48 @@
+#pointA, #pointB {
+	position: absolute;
+	border: 2px solid black;
+	border-radius: 50%;
+	clip-path: circle(50% at center);
+	height: 10%;
+	width: 10%;
+}
+
+#pointA {
+	background-color: var(--light-blue);
+	transform: translateY(-50%);
+	left: 90%;
+	top: 50%;
+}
+
+.containerAActivate {
+	animation: 10s linear containerAActivate;
+}
+
+@keyframes containerAActivate {
+	from {
+		transform: translate(-50%, -50%) rotate(0deg);
+	}
+	to {
+		transform: translate(-50%, -50%) rotate(-360deg);
+	}
+}
+
+#pointB {
+	background-color: var(--king-blue);
+	transform: translateX(-50%);
+	top: 90%;
+	left: 50%;
+}
+
+.containerBActivate {
+	animation: 7s linear containerBActivate;
+}
+
+@keyframes containerBActivate {
+	from {
+		transform: translate(-50%, -50%) rotate(0deg);
+	}
+	to {
+		transform: translate(-50%, -50%) rotate(360deg);
+	}
+}

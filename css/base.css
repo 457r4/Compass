@@ -1,0 +1,10 @@
+/* Base Circle Style */
+
+#base {
+	position: relative;
+	background-color: var(--base-color);
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	clip-path: circle(50% at center);
+}
